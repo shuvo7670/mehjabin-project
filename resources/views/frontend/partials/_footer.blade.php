@@ -1,110 +1,127 @@
-    <!-- footer -->
-    <footer class="footer-light">
-        <section class="section-b-space light-layout">
-            <div class="container">
-                <div class="row footer-theme partition-f">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer-title footer-mobile-title">
-                            <h4>about</h4>
-                        </div>
-                        <div class="footer-contant">
-                            <div class="footer-logo"><img src="{{('frontend/')}}/assets/images/icon/logo.png" alt=""></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                            <div class="footer-social">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col offset-xl-1">
-                        <div class="sub-title">
-                            <div class="footer-title">
-                                <h4>my account</h4>
-                            </div>
-                            <div class="footer-contant">
-                                <ul>
-                                    <li><a href="#">mens</a></li>
-                                    <li><a href="#">womens</a></li>
-                                    <li><a href="#">clothing</a></li>
-                                    <li><a href="#">accessories</a></li>
-                                    <li><a href="#">featured</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="sub-title">
-                            <div class="footer-title">
-                                <h4>why we choose</h4>
-                            </div>
-                            <div class="footer-contant">
-                                <ul>
-                                    <li><a href="#">shipping & return</a></li>
-                                    <li><a href="#">secure shopping</a></li>
-                                    <li><a href="#">gallary</a></li>
-                                    <li><a href="#">affiliates</a></li>
-                                    <li><a href="#">contacts</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="sub-title">
-                            <div class="footer-title">
-                                <h4>store information</h4>
-                            </div>
-                            <div class="footer-contant">
-                                <ul class="contact-list">
-                                    <li><i class="fa fa-map-marker"></i>Multikart Demo Store, Demo store India 345-659
-                                    </li>
-                                    <li><i class="fa fa-phone"></i>Call Us: 123-456-7898</li>
-                                    <li><i class="fa fa-envelope-o"></i>Email Us: <a href="#">Support@Fiot.com</a></li>
-                                    <li><i class="fa fa-fax"></i>Fax: 123456</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="sub-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-md-6 col-sm-12">
-                        <div class="footer-end">
-                            <p><i class="fa fa-copyright" aria-hidden="true"></i> 2017-18 themeforest powered by
-                                pixelstrap</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-md-6 col-sm-12">
-                        <div class="payment-card-bottom">
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="{{('frontend/')}}/assets/images/icon/visa.png" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{('frontend/')}}/assets/images/icon/mastercard.png" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{('frontend/')}}/assets/images/icon/paypal.png" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{('frontend/')}}/assets/images/icon/american-express.png" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{('frontend/')}}/assets/images/icon/discover.png" alt=""></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer end -->
+	<!--=============================================
+	=            footer area         =
+	=============================================-->
+
+	<div class="footer-container footer-one pt-100 pb-50">
+		<div class="container wide">
+			<div class="row">
+				<div class="col footer-single-widget">
+					<!--=======  copyright text  =======-->
+					<!--=======  logo  =======-->
+
+					<div class="logo">
+						<img src="assets/images/logo.png" class="img-fluid" alt="">
+					</div>
+
+					<!--=======  End of logo  =======-->
+
+					<!--=======  copyright text  =======-->
+
+					<div class="copyright-text">
+						<p> &copy; 2020 lezada. <span>All Rights Reserved</span></p>
+					</div>
+
+					<!--=======  End of copyright text  =======-->
+
+					<!--=======  End of copyright text  =======-->
+				</div>
+				<div class="col footer-single-widget">
+					<!--=======  single widget  =======-->
+					<h5 class="widget-title">ABOUT</h5>
+
+					<!--=======  footer navigation container  =======-->
+
+					<div class="footer-nav-container">
+						<nav>
+							<ul>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Store location</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">Orders tracking</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<!--=======  End of footer navigation container  =======-->
+
+					<!--=======  single widget  =======-->
+				</div>
+				<div class="col footer-single-widget">
+					<!--=======  single widget  =======-->
+					<h5 class="widget-title">USEFUL LINKS</h5>
+
+					<!--=======  footer navigation container  =======-->
+
+					<div class="footer-nav-container">
+						<nav>
+							<ul>
+								<li><a href="#">Returns</a></li>
+								<li><a href="#">Support Policy</a></li>
+								<li><a href="#">Size guide</a></li>
+								<li><a href="#">FAQs</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<!--=======  End of footer navigation container  =======-->
+
+					<!--=======  single widget  =======-->
+				</div>
+
+				<div class="col footer-single-widget">
+					<!--=======  single widget  =======-->
+					<h5 class="widget-title">FOLLOW US ON</h5>
+
+					<!--=======  footer navigation container  =======-->
+
+					<div class="footer-nav-container footer-social-links">
+						<nav>
+							<ul>
+								<li><a href="http://twitter.com/"><i class="fa fa-twitter"></i> Twitter</a></li>
+								<li><a href="http://facebook.com/"> <i class="fa fa-facebook"></i> Facebook</a></li>
+								<li><a href="http://instagram.com/"><i class="fa fa-instagram"></i> Instagram</a></li>
+								<li><a href="http://youtube.com/"> <i class="fa fa-youtube"></i> Youtube</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<!--=======  End of footer navigation container  =======-->
+
+
+					<!--=======  single widget  =======-->
+				</div>
+				<div class="col footer-single-widget">
+					<!--=======  single widget  =======-->
+
+					<div class="footer-subscription-widget">
+						<h2 class="footer-subscription-title">Subscribe.</h2>
+						<p class="subscription-subtitle">Subscribe to our newsletter to receive news on update.</p>
+
+						<!--=======  subscription form  =======-->
+
+						<div class="subscription-form">
+							<form id="mc-form" class="mc-form">
+								<input type="email" placeholder="Your email address" required>
+								<button type="submit"><i class="ion-ios-arrow-thin-right"></i></button>
+							</form>
+						</div>
+
+						<!--=======  End of subscription form  =======-->
+
+						<!-- mailchimp-alerts Start -->
+
+						<div class="mailchimp-alerts">
+							<div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+							<div class="mailchimp-success"></div><!-- mailchimp-success end -->
+							<div class="mailchimp-error"></div><!-- mailchimp-error end -->
+						</div><!-- mailchimp-alerts end -->
+
+					</div>
+
+					<!--=======  End of single widget  =======-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--=====  End of footer area  ======-->

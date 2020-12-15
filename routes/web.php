@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('frontend.master');
+    return view('frontend.index');
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

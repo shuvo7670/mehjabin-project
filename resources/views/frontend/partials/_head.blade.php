@@ -1,32 +1,34 @@
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="multikart">
-<meta name="keywords" content="multikart">
-<meta name="author" content="multikart">
-<link rel="icon" href="../assets/images/favicon/1.png" type="image/x-icon">
-<link rel="shortcut icon" href="../assets/images/favicon/1.png" type="image/x-icon">
-<title>Multikart - Multi-purpopse E-commerce Html Template</title>
+<title>Lezada - Multipurpose eCommerce Bootstrap4 Template</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Favicon -->
+<link rel="icon" href="assets/images/favicon.ico">
 
-<!--Google font-->
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+<!-- CSS
+============================================ -->
+<!-- Bootstrap CSS -->
+<link href="{{asset('frontend/assets/css/bootstrap.min.css')}}" rel="stylesheet">
 
-<!-- Icons -->
-<link rel="stylesheet" type="text/css" href="{{asset('/frontend/')}}/assets/css/fontawesome.css">
+<!-- FontAwesome CSS -->
+<link href="{{asset('frontend/assets/css/font-awesome.min.css')}}" rel="stylesheet">
 
-<!--Slick slider css-->
-<link rel="stylesheet" type="text/css" href="{{asset('/frontend/')}}/assets/css/slick.css">
-<link rel="stylesheet" type="text/css" href="{{asset('/frontend/')}}/assets/css/slick-theme.css">
+<!-- Ionicons CSS -->
+<link href="{{asset('frontend/assets/css/ionicons.min.css')}}" rel="stylesheet">
 
-<!-- Animate icon -->
-<link rel="stylesheet" type="text/css" href="{{asset('/frontend/')}}/assets/css/animate.css">
+<!-- Themify CSS -->
+<link href="{{asset('frontend/assets/css/themify-icons.css')}}" rel="stylesheet">
 
-<!-- Themify icon -->
-<link rel="stylesheet" type="text/css" href="{{asset('/frontend/')}}/assets/css/themify-icons.css">
+<!-- Plugins CSS -->
+<link href="{{asset('frontend/assets/css/plugins.css')}}" rel="stylesheet">
 
-<!-- Bootstrap css -->
-<link rel="stylesheet" type="text/css" href="{{asset('/frontend/')}}/assets/css/bootstrap.css">
+<!-- Helper CSS -->
+<link href="{{asset('frontend/assets/css/helper.css')}}" rel="stylesheet">
 
-<!-- Theme css -->
-<link rel="stylesheet" type="text/css" href="{{asset('/frontend/')}}/assets/css/color1.css" media="screen" id="color">
+<!-- Main CSS -->
+<link href="{{asset('frontend/assets/css/main.css')}}" rel="stylesheet">
 
+
+<!-- Modernizer JS -->
+<script src="{{asset('frontend/assets/js/vendor/modernizr-2.8.3.min.js')}}"></script>
