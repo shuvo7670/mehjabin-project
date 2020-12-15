@@ -20,3 +20,22 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
 })->name('dashboard');
+
+// Backend Route Start
+Route::group(['prefix'=>'backend', 'as'=>'backend.', 'namespace'=>'Backend','middleware' => 'auth'], function(){
+
+    // Start Slider Controller
+    Route::group(['prefix'=>'slider', 'as'=>'slider.'], function(){
+        Route::get('list', [
+            'uses'=>'SliderController@create',
+            'as'=>'list'
+        ]);
+        Route::POST('add', [
+            'uses'=>'SliderController@store',
+            'as'=>'add'
+        ]);
+    });
+    // End Slider Controller
+});
+
+// Backend Route End

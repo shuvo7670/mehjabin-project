@@ -15,6 +15,11 @@
             <li><a class="treeview-item" href="widgets.html"><i class="icon fa fa-circle-o"></i> Widgets</a></li>
           </ul>
         </li>
-        <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Charts</span></a></li>
+        <li>
+            <a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Charts</span></a>
+        </li>
+        <li>
+            <a class="app-menu__item" href="{{route('backend.slider.list')}}"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Slider</span></a>
+        </li>
       </ul>
     </aside>
