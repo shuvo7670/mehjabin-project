@@ -54,7 +54,6 @@ Route::group(['prefix'=>'backend', 'as'=>'backend.', 'namespace'=>'Backend','mid
         ]);
     });
     // End Slider Controller
-
     // Start Category Controller
     Route::group(['prefix'=>'category', 'as'=>'category.'], function(){
         Route::get('list', [
@@ -99,6 +98,32 @@ Route::group(['prefix'=>'backend', 'as'=>'backend.', 'namespace'=>'Backend','mid
         ]);
     });
     // End Product Controller
+        // Start Product Controller
+        Route::group(['prefix'=>'setting', 'as'=>'setting.'], function(){
+            Route::group(['prefix'=>'header', 'as'=>'header.'], function(){
+                Route::GET('list', [
+                    'uses'=>'SettingController@headerCreate',
+                    'as'=>'list'
+                ]);
+                Route::POST('update', [
+                    'uses'=>'SettingController@headerUpdate',
+                    'as'=>'update'
+                ]);
+
+            });
+            Route::group(['prefix'=>'footer', 'as'=>'footer.'], function(){
+                Route::GET('list', [
+                    'uses'=>'SettingController@footerCreate',
+                    'as'=>'list'
+                ]);
+                Route::POST('update', [
+                    'uses'=>'SettingController@footerUpdate',
+                    'as'=>'update'
+                ]);
+
+            });
+        });
+        // End Product Controller
 });
 
 // Backend Route End
