@@ -34,53 +34,18 @@
 						<div class="site-main-nav d-none d-lg-block">
 							<nav class="site-nav center-menu">
 								<ul>
-									<li class="menu-item-has-children"><a href="javascript:void(0)">Pages</a>
+									<li><a href="">Home</a>
+									</li>
+									<li class="menu-item-has-children"><a href="javascript:void(0)">Category</a>
 										<ul class="sub-menu single-column-menu">
-											<li><a href="about-us.html">About Us</a></li>
-											<li><a href="about-us-2.html">About Us 2</a></li>
-											<li><a href="contact-us.html">Contact Us</a></li>
-											<li><a href="faq.html">F.A.Q</a></li>
-											<li><a href="coming-soon.html">Coming Soon</a></li>
-											<li><a href="404.html">404</a></li>
-											<li><a href="my-account.html">My account</a></li>
-											<li><a href="compare.html">Compare</a></li>
+											<li><a href="{{url('category/product')}}">Category One</a></li>
+											<li><a href="about-us-2.html">Category Two</a></li>
+											<li><a href="about-us-2.html">Category Three</a></li>
 										</ul>
 									</li>
-									<li class="menu-item-has-children"><a href="javascript:void(0)">Pages</a>
-										<ul class="sub-menu single-column-menu">
-											<li><a href="about-us.html">About Us</a></li>
-											<li><a href="about-us-2.html">About Us 2</a></li>
-											<li><a href="contact-us.html">Contact Us</a></li>
-											<li><a href="faq.html">F.A.Q</a></li>
-											<li><a href="coming-soon.html">Coming Soon</a></li>
-											<li><a href="404.html">404</a></li>
-											<li><a href="my-account.html">My account</a></li>
-											<li><a href="compare.html">Compare</a></li>
-										</ul>
+									<li><a href="">About Us</a>
 									</li>
-									<li class="menu-item-has-children"><a href="javascript:void(0)">Pages</a>
-										<ul class="sub-menu single-column-menu">
-											<li><a href="about-us.html">About Us</a></li>
-											<li><a href="about-us-2.html">About Us 2</a></li>
-											<li><a href="contact-us.html">Contact Us</a></li>
-											<li><a href="faq.html">F.A.Q</a></li>
-											<li><a href="coming-soon.html">Coming Soon</a></li>
-											<li><a href="404.html">404</a></li>
-											<li><a href="my-account.html">My account</a></li>
-											<li><a href="compare.html">Compare</a></li>
-										</ul>
-									</li>
-									<li class="menu-item-has-children"><a href="javascript:void(0)">Pages</a>
-										<ul class="sub-menu single-column-menu">
-											<li><a href="about-us.html">About Us</a></li>
-											<li><a href="about-us-2.html">About Us 2</a></li>
-											<li><a href="contact-us.html">Contact Us</a></li>
-											<li><a href="faq.html">F.A.Q</a></li>
-											<li><a href="coming-soon.html">Coming Soon</a></li>
-											<li><a href="404.html">404</a></li>
-											<li><a href="my-account.html">My account</a></li>
-											<li><a href="compare.html">Compare</a></li>
-										</ul>
+									<li><a href="/">Contact Us</a>
 									</li>
 								</ul>
 							</nav>

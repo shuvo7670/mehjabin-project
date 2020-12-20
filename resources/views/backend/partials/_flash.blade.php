@@ -1,5 +1,14 @@
 @if ($errors->any())
-    @foreach ($errors->all() as $error)
-        <div class="bg-danger form-control text-light">{{$error}}</div>
-    @endforeach
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+@if(session()->has('message'))
+    <div class="alert alert-success">
+        {{ session()->get('message') }}
+    </div>
 @endif

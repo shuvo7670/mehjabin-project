@@ -1,40 +1,37 @@
 @extends('backend.master')
-@section('title') Dashboard || Slider @endsection
+@section('title') Dashboard || Category @endsection
 @section('content')
 <div class="col-md-12">
     @include('backend.partials._flash')
     <div class="tile">
-    <button class="btn btn-primary pull-right" data-toggle="modal" data-target="#addSlider">Add Slider</button>
-      <h3 class="tile-title">Slider List</h3>
+    <button class="btn btn-primary pull-right" data-toggle="modal" data-target="#addCategory">Add Category</button>
+      <h3 class="tile-title">Category List</h3>
       <div class="table-responsive">
         <table class="table">
           <thead>
             <tr>
               <th>S.I</th>
-              <th>Slider Image</th>
-              <th>Product LInk</th>
+              <th>Category Name</th>
               <th>Status</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
-            @if(count($sliders)>0)
-                @foreach($sliders as $slider)
+            @if(count($categories)>0)
+                @foreach($categories as $category)
                 <tr>
                     <td>{{$loop->index+1}}</td>
-                    <td><img src="{{asset('uploads/sliders/'.$slider->slider_image)}}" width="80px" alt="{{$slider->product_link}}"></td>
-                    <td id="product_link">{{$slider->product_link}}</td>
-                    <td>{{ $slider->status == 0 ? "Deactive" : "Active" }}</td>
+                    <td id="category_name">{{$category->category_name}}</td>
+                    <td>{{ $category->status == 0 ? "Deactive" : "Active" }}</td>
                     <td>
-                        <button class="btn btn-info" onclick="sliderEditModal('{{$slider->id}}','{{$slider->slider_image}}','{{$slider->product_link}}')">Edit</button>
-
-                        <a href="{{route('backend.slider.delete',['slider_id'=> $slider->id])}}" class="btn btn-danger delete-confirm">Delete</a
+                        <button class="btn btn-info" onclick="categoryEditModal('{{$category->id}}','{{$category->category_name}}')">Edit</button>
+                        <a  href="{{route('backend.category.delete',['category_id'=> $category->id])}}" class="btn btn-danger delete-confirm">Delete</a
                     </td>
                 </tr>
                 @endforeach
             @else
             <tr>
-                <td colspan="5" class="field-empty">Your Slider Table Field is Empty!!</td>
+                <td colspan="5" class="field-empty">Your Category Table Field is Empty!!</td>
             </tr>
             @endif
           </tbody>
@@ -44,18 +41,17 @@
   </div>
 @endsection
 @section('modals')
-@include('backend.pages.slider.modals.slider_add')
-@include('backend.pages.slider.modals.slider_edit')
+@include('backend.pages.category.modals.category_add')
+@include('backend.pages.category.modals.category_edit')
 @endsection
 @section('custom_scripts')
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
   <script>
-      function sliderEditModal(slider_id,slider_image,product_link){
-          $('#editSlider').modal('show');
-          $('#slider_id').val(slider_id);
-          $('#old_slider_image').prop('src',"/uploads/sliders/"+slider_image);
-          $('#editSliderProductLink').val(product_link);
+      function categoryEditModal(category_id,category_name){
+          $('#editCategory').modal('show');
+          $('#category_id').val(category_id);
+          $('#editCategoryName').val(category_name);
       }
       $('.delete-confirm').on('click', function (event) {
             event.preventDefault();
@@ -71,7 +67,7 @@
                 }
             });
         });
-  </script>
+</script>
 @endsection
 @section('custom_styles')
 <style>

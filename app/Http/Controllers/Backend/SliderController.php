@@ -89,9 +89,36 @@ class SliderController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        // Validation
+        $request->validate([
+            'slider_image' => 'nullable|image',
+            'product_link' => 'nullable',
+        ]);
+        // Data Store To Database
+        try {
+           $slider = Slider::findOrFail($request->slider_id);
+            if ($request->hasFile('slider_image')) {
+                // Delete Old Image
+                unlink('uploads/sliders/'.$slider->slider_image);
+                // End Delete Old Image
+                $image = $request->file('slider_image');
+                $name = time().'.'.$image->getClientOriginalExtension();
+                $destinationPath = public_path('/uploads/sliders/');
+                $image->move($destinationPath, $name);
+                $slider->slider_image = $name;
+                $slider->product_link = $request->product_link;
+                $slider->save();
+                return back()->with('message','Slider Updated successfully');
+            }else{
+                $slider->product_link = $request->product_link;
+                $slider->save();
+                return back()->with('message','Slider Updated successfully');
+            }
+        } catch (\Throwable $th) {
+            return back()->with('error','Something went wrong...!!');
+        }
     }
 
     /**
@@ -100,8 +127,12 @@ class SliderController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request)
     {
-        //
+        $slider = Slider::findOrFail($request->slider_id);
+        unlink('uploads/sliders/'.$slider->slider_image);
+        $slider->delete();
+        return back()->with('message','Successfully Slider Deleted!!!');
+
     }
 }

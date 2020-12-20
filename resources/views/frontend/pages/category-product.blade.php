@@ -1,58 +1,50 @@
 @extends('frontend.master')
 @section('content')
-<div class="slider-area mb-30">
-    <!--=======  slider-wrapper  =======-->
+<div class="shop-page-wrapper">
 
-    <div class="lezada-slick-slider lezada-slick-slider--fullscreen" data-slick-setting='{
-        "slidesToShow": 1,
-        "slidesToScroll": 1,
-        "arrows": true,
-        "dots": true,
-        "autoplay": false,
-        "autoplaySpeed": 5000,
-        "speed": 1000,
-        "prevArrow": {"buttonClass": "slick-prev", "iconClass": "ti-angle-left" },
-        "nextArrow": {"buttonClass": "slick-next", "iconClass": "ti-angle-right" }
-    }'>
+    <!--=======  shop page header  =======-->
 
+    <div class="shop-page-header">
+        <div class="container">
+            <div class="row align-items-center">
 
-        <!--=======  single slider  =======-->
-        <div class="lezada-single-slider bg-img" data-bg="{{asset('frontend/assets/images/decor-two/slider-1.jpg')}}">
-            <div class="container h-100">
-                <div class="row text-center justify-content-center align-items-center h-100">
-                    <div class="lezada-single-slider__content">
-                        <h5 class="subtitle">INDOOR</h5>
-                        <h2 class="main-title">UP TO <br> 30% OFF </h2>
-                        <a href="shop-left-sidebar.html" class="lezada-button lezada-button--medium">shop now</a>
-                    </div>
+                <div class="col-12 col-lg-7 col-md-10 d-none d-md-block">
+                    <h1>Category One</h1>
                 </div>
+
+                <div class="col-12 col-lg-5 col-md-2">
+                    <!--=======  filter icons  =======-->
+
+                    <div class="filter-icons">
+                        <!--=======  grid icons  =======-->
+
+                        <div class="single-icon grid-icons">
+                            <a data-target="five-column" href="javascript:void(0)"><i class="ti-layout-grid4-alt"></i></a>
+                            <a data-target="four-column" class="active" href="javascript:void(0)"><i
+                                    class="ti-layout-grid3-alt"></i></a>
+                            <a data-target="three-column" href="javascript:void(0)"><i class="ti-layout-grid2-alt"></i></a>
+                            <a data-target="list" href="javascript:void(0)"><i class="ti-view-list"></i></a>
+                        </div>
+
+                        <!--=======  End of grid icons  =======-->
+
+                        <!--=======  advance filter icon  =======-->
+                        <!--=======  End of advance filter icon  =======-->
+                    </div>
+
+                    <!--=======  End of filter icons  =======-->
+                </div>
+
             </div>
         </div>
-
-        <!--=======  End of single slider  =======-->
-
-        <!--=======  single slider  =======-->
-        <div class="lezada-single-slider bg-img" data-bg="{{asset('frontend/assets/images/decor-two/slider-2.jpg')}}">
-            <div class="container h-100">
-                <div class="row text-center justify-content-center align-items-center h-100">
-                    <div class="lezada-single-slider__content">
-                        <h5 class="subtitle subtitle--black">INDOOR</h5>
-                        <h2 class="main-title main-title--black">UP TO <br> 30% OFF </h2>
-                        <a href="shop-left-sidebar.html" class="lezada-button lezada-button--dark lezada-button--medium">shop
-                            now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--=======  End of single slider  =======-->
-
-
     </div>
 
-    <!--=======  End of slider-wrapper  =======-->
-</div>
-    <!--=====  End of slider area  ======-->
+    <!--=======  End of shop page header  =======-->
+
+    <!--=============================================
+    =            shop page content         =
+    =============================================-->
+
     <div class="shop-page-content mt-100 mb-100">
         <div class="container">
             <div class="row">
@@ -75,15 +67,15 @@
 
                                 <!--=======  single product content  =======-->
 
-                                <div class="single-product__content text-center">
-                                    <h3>Product One</h3>
+                                <div class="single-product__content">
+                                    <div class="title">
+                                        <h3> <a href="shop-product-basic.html">Light Brown Watch</a></h3>
+                                        <a href="#">Add to cart</a>
+                                    </div>
                                     <div class="price">
                                         <span class="main-price">$130.00</span>
                                     </div>
-                                    <a href="" class="btn btn-primary">Details</a>
-                                    <a href="" class="btn btn-info">Add to Cart</a>
                                 </div>
-
 
                                 <!--=======  End of single product content  =======-->
                             </div>
@@ -638,4 +630,7 @@
             </div>
         </div>
     </div>
+
+    <!--=====  End of shop page content  ======-->
+</div>
 @endsection

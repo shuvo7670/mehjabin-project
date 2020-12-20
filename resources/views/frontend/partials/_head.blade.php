@@ -29,6 +29,6 @@
 <!-- Main CSS -->
 <link href="{{asset('frontend/assets/css/main.css')}}" rel="stylesheet">
 
-
+<link href="{{asset('frontend/assets/css/custom.css')}}" rel="stylesheet">
 <!-- Modernizer JS -->
 <script src="{{asset('frontend/assets/js/vendor/modernizr-2.8.3.min.js')}}"></script>

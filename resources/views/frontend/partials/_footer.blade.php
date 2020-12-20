@@ -86,39 +86,7 @@
 					</div>
 
 					<!--=======  End of footer navigation container  =======-->
-
-
 					<!--=======  single widget  =======-->
-				</div>
-				<div class="col footer-single-widget">
-					<!--=======  single widget  =======-->
-
-					<div class="footer-subscription-widget">
-						<h2 class="footer-subscription-title">Subscribe.</h2>
-						<p class="subscription-subtitle">Subscribe to our newsletter to receive news on update.</p>
-
-						<!--=======  subscription form  =======-->
-
-						<div class="subscription-form">
-							<form id="mc-form" class="mc-form">
-								<input type="email" placeholder="Your email address" required>
-								<button type="submit"><i class="ion-ios-arrow-thin-right"></i></button>
-							</form>
-						</div>
-
-						<!--=======  End of subscription form  =======-->
-
-						<!-- mailchimp-alerts Start -->
-
-						<div class="mailchimp-alerts">
-							<div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
-							<div class="mailchimp-success"></div><!-- mailchimp-success end -->
-							<div class="mailchimp-error"></div><!-- mailchimp-error end -->
-						</div><!-- mailchimp-alerts end -->
-
-					</div>
-
-					<!--=======  End of single widget  =======-->
 				</div>
 			</div>
 		</div>
