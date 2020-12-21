@@ -27,10 +27,6 @@ Route::get('category/product','Frontend\PageController@shoeCategoryProductPage')
 // Frontend Route End
 
 
-
-
-
-
 // Backend Route Start
 Route::group(['prefix'=>'backend', 'as'=>'backend.', 'namespace'=>'Backend','middleware' => 'auth'], function(){
 
@@ -99,31 +95,111 @@ Route::group(['prefix'=>'backend', 'as'=>'backend.', 'namespace'=>'Backend','mid
     });
     // End Product Controller
         // Start Product Controller
-        Route::group(['prefix'=>'setting', 'as'=>'setting.'], function(){
-            Route::group(['prefix'=>'header', 'as'=>'header.'], function(){
-                Route::GET('list', [
-                    'uses'=>'SettingController@headerCreate',
-                    'as'=>'list'
-                ]);
-                Route::POST('update', [
-                    'uses'=>'SettingController@headerUpdate',
-                    'as'=>'update'
-                ]);
+    Route::group(['prefix'=>'setting', 'as'=>'setting.'], function(){
+        Route::group(['prefix'=>'header', 'as'=>'header.'], function(){
+            Route::GET('list', [
+                'uses'=>'SettingController@headerCreate',
+                'as'=>'list'
+            ]);
+            Route::POST('update', [
+                'uses'=>'SettingController@headerUpdate',
+                'as'=>'update'
+            ]);
 
-            });
-            Route::group(['prefix'=>'footer', 'as'=>'footer.'], function(){
-                Route::GET('list', [
-                    'uses'=>'SettingController@footerCreate',
-                    'as'=>'list'
-                ]);
-                Route::POST('update', [
-                    'uses'=>'SettingController@footerUpdate',
-                    'as'=>'update'
-                ]);
-
-            });
         });
-        // End Product Controller
+        Route::group(['prefix'=>'footer', 'as'=>'footer.'], function(){
+            Route::GET('list', [
+                'uses'=>'SettingController@footerCreate',
+                'as'=>'list'
+            ]);
+            Route::POST('update', [
+                'uses'=>'SettingController@footerUpdate',
+                'as'=>'update'
+            ]);
+
+        });
+    });
+    // End Product Controller
+    // Start Setting Controller
+    Route::group(['prefix'=>'setting', 'as'=>'setting.'], function(){
+        Route::group(['prefix'=>'header', 'as'=>'header.'], function(){
+            Route::GET('list', [
+                'uses'=>'SettingController@headerCreate',
+                'as'=>'list'
+            ]);
+            Route::POST('update', [
+                'uses'=>'SettingController@headerUpdate',
+                'as'=>'update'
+            ]);
+
+        });
+        Route::group(['prefix'=>'footer', 'as'=>'footer.'], function(){
+            Route::GET('list', [
+                'uses'=>'SettingController@footerCreate',
+                'as'=>'list'
+            ]);
+            Route::POST('update', [
+                'uses'=>'SettingController@footerUpdate',
+                'as'=>'update'
+            ]);
+
+        });
+    });
+    // End Setting Controller
+// Start Front Page Controller
+
+    Route::group(['prefix'=>'pages', 'as'=>'pages.'], function(){
+        // Start About Us Page
+        Route::group(['prefix'=>'about', 'as'=>'about.'], function(){
+            Route::GET('list', [
+                'uses'=>'AboutUsController@create',
+                'as'=>'list'
+            ]);
+            Route::POST('update', [
+                'uses'=>'AboutUsController@update',
+                'as'=>'update'
+            ]);
+        });   
+        // End About Us Page
+        //Start  Contact Us Page    
+        Route::group(['prefix'=>'contact', 'as'=>'contact.'], function(){
+            Route::GET('list', [
+                'uses'=>'ContactUsController@create',
+                'as'=>'list'
+            ]);
+            Route::POST('update', [
+                'uses'=>'ContactUsController@update',
+                'as'=>'update'
+            ]);
+        });
+        // End Contact Us Page
+        // Start Return Policy Page
+        Route::group(['prefix'=>'policy', 'as'=>'policy.'], function(){
+            Route::GET('list', [
+                'uses'=>'ReturnPolicyController@create',
+                'as'=>'list'
+            ]);
+            Route::POST('update', [
+                'uses'=>'ReturnPolicyController@update',
+                'as'=>'update'
+            ]);
+        });
+        // End Return Policy Page        
+        // Start Return Policy Page
+        Route::group(['prefix'=>'termsofcondition', 'as'=>'termsofcondition.'], function(){
+            Route::GET('list', [
+                'uses'=>'TermsOfConditionController@create',
+                'as'=>'list'
+            ]);
+            Route::POST('update', [
+                'uses'=>'TermsOfConditionController@update',
+                'as'=>'update'
+            ]);
+        });
+        // End Return Policy Page
+
+    });
+    // End Front Page Controller
 });
 
 // Backend Route End

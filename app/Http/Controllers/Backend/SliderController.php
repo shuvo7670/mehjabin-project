@@ -53,7 +53,7 @@ class SliderController extends Controller
                 $slider->slider_image = $name;
                 $slider->product_link = $request->product_link;
                 $slider->save();
-                return back()->with('success','Slider Added successfully');
+                return back()->with('message','Slider Added successfully');
             }
         } catch (\Throwable $th) {
             return back()->with('error','Something went wrong...!!');

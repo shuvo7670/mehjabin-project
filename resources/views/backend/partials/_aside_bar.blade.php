@@ -35,6 +35,15 @@
             <li><a class="treeview-item" href="{{route('backend.setting.header.list')}}"><i class="icon fa fa-circle-o"></i>Header</a></li>
             <li><a class="treeview-item" href="{{route('backend.setting.footer.list')}}"><i class="icon fa fa-circle-o"></i>Footer</a></li>
           </ul>
+        </li>        
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">Pages</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="treeview-item" href="{{route('backend.pages.about.list')}}"><i class="icon fa fa-circle-o"></i>About Us</a></li>            
+            <li><a class="treeview-item" href="{{route('backend.pages.contact.list')}}"><i class="icon fa fa-circle-o"></i>Contact Us</a></li>            
+            <li><a class="treeview-item" href="{{route('backend.pages.policy.list')}}"><i class="icon fa fa-circle-o"></i>Return Policy</a></li>
+            <li><a class="treeview-item" href="{{route('backend.pages.termsofcondition.list')}}"><i class="icon fa fa-circle-o"></i>Terms & Condition</a></li>
+           
+          </ul>
         </li>
       </ul>
     </aside>
