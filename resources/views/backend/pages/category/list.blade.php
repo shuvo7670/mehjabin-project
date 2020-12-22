@@ -25,7 +25,7 @@
                     <td>{{ $category->status == 0 ? "Deactive" : "Active" }}</td>
                     <td>
                         <button class="btn btn-info" onclick="categoryEditModal('{{$category->id}}','{{$category->category_name}}')">Edit</button>
-                        <a  href="{{route('backend.category.delete',['category_id'=> $category->id])}}" class="btn btn-danger delete-confirm">Delete</a
+                        <a  href="{{route('backend.category.delete',['category_id'=> $category->id])}}" class="btn btn-danger delete-confirm">Delete</a>
                     </td>
                 </tr>
                 @endforeach

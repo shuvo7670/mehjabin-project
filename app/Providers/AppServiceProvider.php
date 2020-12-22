@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Schema\Builder;
+use App\Models\Setting;
+use View;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -13,7 +15,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
     }
 
     /**
@@ -23,6 +24,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $settings = Setting::all();
+        View::share('setting',$settings);
         Builder::defaultStringLength(191);
     }
 }

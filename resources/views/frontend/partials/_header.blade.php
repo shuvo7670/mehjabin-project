@@ -5,12 +5,12 @@
                   <div class="top-header-content">
                      <span>
                      <i class="flaticon-check"></i>
-                     Free shipping on all orders over $50
+                     {{$setting[0]->value}}
                      </span>
                   </div>
                </div>
                <div class="col-lg-6 text-right">
-               		myemail@gmail.com
+               		<span class="text-light">Email Address : <a href="mailto:{{$setting[1]->value}}">{{$setting[1]->value}}</a></span>
                </div>
             </div>
          </div>
@@ -62,7 +62,7 @@
                <div class="col-lg-3">
                   <ul class="middle-header-optional">
                      <li>
-                        <a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+                        <a href="{{route('pages.cart')}}"><i class="flaticon-shopping-cart"></i></a>
                      </li>
                   </ul>
                </div>
@@ -75,7 +75,7 @@
                <div class="main-responsive-menu">
                   <div class="logo">
                      <a href="index.html">
-                     <img src="assets/img/logo-2.png" alt="logo">
+                     <img src="{{asset('frontend/assets/img/logo.png')}}" alt="logo">
                      </a>
                   </div>
                </div>
@@ -190,45 +190,22 @@
                            </ul>
                         </li>
                         <li class="nav-item">
-                           <a href="contact.html" class="nav-link">About Us</a>
+                           <a href="{{route('pages.about-us')}}" class="nav-link">About Us</a>
                         </li>                        
                         <li class="nav-item">
-                           <a href="contact.html" class="nav-link">Contact Us</a>
+                           <a href="{{route('pages.contact-us')}}" class="nav-link">Contact Us</a>
                         </li>  
                      </ul>
                      <div class="others-option d-flex align-items-center">
                         <div class="option-item">
                            <span>
                            Hotline:
-                           <a href="tel:16545676789">(+1) 654 567 – 6789</a>
+                           <a href="tel:{{$setting[5]->value}}">{{$setting[5]->value}}</a>
                            </span>
                         </div>
                      </div>
                   </div>
                </nav>
-            </div>
-         </div>
-         <div class="others-option-for-responsive">
-            <div class="container">
-               <div class="dot-menu">
-                  <div class="inner">
-                     <div class="circle circle-one"></div>
-                     <div class="circle circle-two"></div>
-                     <div class="circle circle-three"></div>
-                  </div>
-               </div>
-               <div class="container">
-                  <div class="option-inner">
-                     <div class="others-option d-flex align-items-center">
-                        <div class="option-item">
-                           <span>
-                           Hotline:
-                           <a href="tel:16545676789">(+1) 654 567 – 6789</a>
-                           </span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
             </div>
          </div>
       </div>

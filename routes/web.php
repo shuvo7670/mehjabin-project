@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Models\Slider;
 use App\Models\Category;
+use App\Models\Product;
+use App\Models\Setting;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,16 +19,47 @@ use App\Models\Category;
 Route::get('/', function () {
     $sliders = Slider::all();
     $categories = Category::where('status',1)->get();
-    return view('frontend.index',compact('sliders','categories'));
+    $products = Product::latest()->get();
+    $settings = Setting::all();
+    return view('frontend.index',compact('sliders','categories','products','settings'));
 });
+
+Route::get('content',function(){
+    return Cart::content();
+});
+
+Route::get('add/cart/{id}','CartController@single_product_cart');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
 })->name('dashboard');
 
 // Frontend Route Statrt
-    Route::get('category/product','Frontend\PageController@shoeCategoryProductPage');
-
+    Route::get('product/{slug}','FrontendController@showProductDetails');
+    // Show Essential Page
+    Route::group(['prefix'=>'pages', 'as'=>'pages.'], function(){
+        Route::get('about-us',[
+            'uses' => 'FrontendController@showAboutUsPage',
+            'as' => 'about-us'
+        ]);        
+        Route::get('contact-us',[
+            'uses' => 'FrontendController@showContactUsPage',
+            'as' => 'contact-us'
+        ]);        
+        Route::get('return-policy',[
+            'uses' => 'FrontendController@showReturnPolicyPage',
+            'as' => 'return-policy'
+        ]);        
+        Route::get('terms-of-services',[
+            'uses' => 'FrontendController@showTermsOfServicesPage',
+            'as' => 'terms-of-services'
+        ]);        
+        Route::get('cart',[
+            'uses' => 'CartController@showCartPage',
+            'as' => 'cart'
+        ]);
+   });
+    // End Show Essential Page
 // Frontend Route End
 
 

@@ -1,110 +1,69 @@
       <section class="footer-area pt-50 pb-20">
          <div class="container">
             <div class="row">
-               <div class="col-lg-3 col-sm-6">
+               <div class="col-lg-4 col-sm-6">
                   <div class="single-footer-widget">
-                     <h2>Get in Touch</h2>
+                     Logo
                      <ul class="footer-contact-info">
                         <li>
                            <span>Address:</span>
-                           <a href="#" target="_blank">4848 Hershell Hollow Road Bothell, WA 89076</a>
+                           <a href="#" target="_blank">{{$setting[5]->value}}</a>
                         </li>
                         <li>
                            <span>Phone:</span>
-                           <a href="tel:+15143214567">+1 (514) 321-4567</a>
+                           <a href="tel:{{$setting[5]->value}}">{{$setting[5]->value}}</a>
                         </li>
                         <li>
                            <span>Email:</span>
-                           <a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#d4bcb1b8b8bb94b1bebbbafab7bbb9"><span class="__cf_email__" data-cfemail="076f626b6b6847626d68692964686a">[email&#160;protected]</span></a>
+                           <a href="mailto:{{$setting[1]->value}}"><span>{{$setting[1]->value}}</span></a>
                         </li>
                      </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="single-footer-widget">
+                     <h2>Quick Link</h2>
+                     <ul class="quick-links">
+                        <li>
+                           <a href="{{route('pages.about-us')}}">About Us</a>
+                        </li>                        
+                        <li>
+                           <a href="{{route('pages.contact-us')}}">Contact Us</a>
+                        </li>                        
+                        <li>
+                           <a href="{{route('pages.return-policy')}}">Return Policy</a>
+                        </li>                        
+                        <li>
+                           <a href="{{route('pages.terms-of-services')}}">Terms of Services</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="single-footer-widget">
+                     <h2>Social Link</h2>
                      <ul class="footer-social">
                         <li>
-                           <a href="#" target="_blank">
+                           <a href="{{$setting[7]->value}}" target="_blank">
                            <i class='bx bxl-facebook'></i>
                            </a>
                         </li>
                         <li>
-                           <a href="#" target="_blank">
-                           <i class='bx bxl-instagram'></i>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#" target="_blank">
-                           <i class='bx bxl-pinterest-alt'></i>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#" target="_blank">
+                           <a href="{{$setting[8]->value}}" target="_blank">
                            <i class='bx bxl-twitter'></i>
                            </a>
                         </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-sm-6">
-                  <div class="single-footer-widget">
-                     <h2>Policies</h2>
-                     <ul class="quick-links">
                         <li>
-                           <a href="#">Shipping And Delivery</a>
+                           <a href="{{$setting[9]->value}}" target="_blank">
+                           <i class='bx bxl-linkedin'></i>
+                           </a>
                         </li>
                         <li>
-                           <a href="#">Payment Method</a>
-                        </li>
-                        <li>
-                           <a href="#">How to Shop</a>
-                        </li>
-                        <li>
-                           <a href="#">Terms And Conditions</a>
-                        </li>
-                        <li>
-                           <a href="#">Privacy Policy</a>
-                        </li>
-                        <li>
-                           <a href="#">Returns</a>
+                           <a href="{{$setting[10]->value}}" target="_blank">
+                           <i class='bx bxl-whatsapp'></i>
+                           </a>
                         </li>
                      </ul>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-sm-6">
-                  <div class="single-footer-widget">
-                     <h2>Support</h2>
-                     <ul class="quick-links">
-                        <li>
-                           <a href="#">My Account</a>
-                        </li>
-                        <li>
-                           <a href="#">Order Tracking</a>
-                        </li>
-                        <li>
-                           <a href="#">Contact Us</a>
-                        </li>
-                        <li>
-                           <a href="#">Customer Services</a>
-                        </li>
-                        <li>
-                           <a href="#">FAQs</a>
-                        </li>
-                        <li>
-                           <a href="#">Help Desk</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-sm-6">
-                  <div class="single-footer-widget">
-                     <h2>Join Our Newsletter</h2>
-                     <div class="newsletter-item">
-                        <div class="newsletter-content">
-                           <p>Subscribe to the newsletter for all the latest updates</p>
-                        </div>
-                        <form class="newsletter-form" data-toggle="validator">
-                           <input type="email" class="input-newsletter" placeholder="Email address" name="EMAIL" required autocomplete="off">
-                           <button type="submit">Subscribe</button>
-                           <div id="validator-newsletter" class="form-result"></div>
-                        </form>
-                     </div>
                   </div>
                </div>
             </div>
@@ -114,8 +73,7 @@
          <div class="container">
             <div class="copyright-area-content">
                <p>
-                  Copyright @2020 Ejon. All Rights Reserved by
-                  <a href="https://envytheme.com/" target="_blank">EnvyTheme</a>
+                  {{$setting[11]->value}}
                </p>
             </div>
          </div>

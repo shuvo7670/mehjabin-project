@@ -15,3 +15,4 @@
       <script src="{{asset('frontend/assets/js/contact-form-script.js')}}"></script>
       <script src="{{asset('frontend/assets/js/wow.min.js')}}"></script>
       <script src="{{asset('frontend/assets/js/main.js')}}"></script>
+      @yield('custom_scripts')
