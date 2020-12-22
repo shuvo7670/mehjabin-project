@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Slider;
+use App\Models\Category;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('frontend.index');
+    $sliders = Slider::all();
+    $categories = Category::where('status',1)->get();
+    return view('frontend.index',compact('sliders','categories'));
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
@@ -22,7 +25,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 // Frontend Route Statrt
-Route::get('category/product','Frontend\PageController@shoeCategoryProductPage');
+    Route::get('category/product','Frontend\PageController@shoeCategoryProductPage');
 
 // Frontend Route End
 

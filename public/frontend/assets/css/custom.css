@@ -1,6 +1,46 @@
-.single-product__content .price span {
-    font-size: 25px !important;
+.product-list .price {
+	font-size: 18px !important;
+	
 }
-.single-product__content .price > a {
-    font-size: 20px !important;
+.product-list {
+	border: 0.2px solid #2ecc71;
+}
+.det-cart-btn {
+	border: 1px solid #2ecc71 !important;
+}
+.bg-custom {
+	background: #2ecc71 !important;
+}
+.middle-header-area {
+    background-color: #2ecc71 !important; 
+}
+.top-header-area {
+    background-color: #2ecc71 !important;
+}
+.main-navbar .navbar .navbar-category .navbar-nav .nav-item a {
+   background-color: #2ecc71 !important;
+}
+.main-navbar .navbar .navbar-nav .nav-item a:hover, .main-navbar .navbar .navbar-nav .nav-item a:focus, .main-navbar .navbar .navbar-nav .nav-item a.active {
+	background-color: #2ecc71 !important;
+}
+.middle-header-search form .form-group .nice-select {
+	background-color: #2ecc71 !important;
+ }
+ .middle-header-search form .form-group .nice-select .list .option:hover {
+	background-color: #2ecc71 !important;
+}
+
+.middle-header-search form .search-box button {
+		background-color: #2ecc71 !important;
+}
+
+.middle-header-area {    
+	padding-top: 0px;
+    padding-bottom: 10px;
+}
+.middle-header-optional {
+    margin-top: 7px;
+}
+.col-sm-6 {
+	width: 50% !important;
 }

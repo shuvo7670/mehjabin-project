@@ -32,7 +32,7 @@ class ProductController extends Controller
                         ->join('categories','products.category_id','categories.id')
                         ->select('products.*','categories.category_name')
                         ->get();
-        $categories = Category::where('status',1)->get();
+        $categories = Category::all();
         return view('backend.pages.product.list',compact('products','categories'));
     }
 
@@ -95,7 +95,7 @@ class ProductController extends Controller
     public function edit(Request $request)
     {
         $product = Product::where('id',$request->product_id)->first();
-        $categories = Category::where('status',1)->get();
+        $categories = Category::all();
         return view('backend.pages.product.modals.product_edit',compact('product','categories'));
     }
 

@@ -1,95 +1,125 @@
-	<!--=============================================
-	=            footer area         =
-	=============================================-->
-
-	<div class="footer-container footer-one pt-100 pb-50">
-		<div class="container wide">
-			<div class="row">
-				<div class="col footer-single-widget">
-					<!--=======  copyright text  =======-->
-					<!--=======  logo  =======-->
-
-					<div class="logo">
-						<img src="assets/images/logo.png" class="img-fluid" alt="">
-					</div>
-
-					<!--=======  End of logo  =======-->
-
-					<!--=======  copyright text  =======-->
-
-					<div class="copyright-text">
-						<p> &copy; 2020 lezada. <span>All Rights Reserved</span></p>
-					</div>
-
-					<!--=======  End of copyright text  =======-->
-
-					<!--=======  End of copyright text  =======-->
-				</div>
-				<div class="col footer-single-widget">
-					<!--=======  single widget  =======-->
-					<h5 class="widget-title">ABOUT</h5>
-
-					<!--=======  footer navigation container  =======-->
-
-					<div class="footer-nav-container">
-						<nav>
-							<ul>
-								<li><a href="#">About us</a></li>
-								<li><a href="#">Store location</a></li>
-								<li><a href="#">Contact</a></li>
-								<li><a href="#">Orders tracking</a></li>
-							</ul>
-						</nav>
-					</div>
-
-					<!--=======  End of footer navigation container  =======-->
-
-					<!--=======  single widget  =======-->
-				</div>
-				<div class="col footer-single-widget">
-					<!--=======  single widget  =======-->
-					<h5 class="widget-title">USEFUL LINKS</h5>
-
-					<!--=======  footer navigation container  =======-->
-
-					<div class="footer-nav-container">
-						<nav>
-							<ul>
-								<li><a href="#">Returns</a></li>
-								<li><a href="#">Support Policy</a></li>
-								<li><a href="#">Size guide</a></li>
-								<li><a href="#">FAQs</a></li>
-							</ul>
-						</nav>
-					</div>
-
-					<!--=======  End of footer navigation container  =======-->
-
-					<!--=======  single widget  =======-->
-				</div>
-
-				<div class="col footer-single-widget">
-					<!--=======  single widget  =======-->
-					<h5 class="widget-title">FOLLOW US ON</h5>
-
-					<!--=======  footer navigation container  =======-->
-
-					<div class="footer-nav-container footer-social-links">
-						<nav>
-							<ul>
-								<li><a href="http://twitter.com/"><i class="fa fa-twitter"></i> Twitter</a></li>
-								<li><a href="http://facebook.com/"> <i class="fa fa-facebook"></i> Facebook</a></li>
-								<li><a href="http://instagram.com/"><i class="fa fa-instagram"></i> Instagram</a></li>
-								<li><a href="http://youtube.com/"> <i class="fa fa-youtube"></i> Youtube</a></li>
-							</ul>
-						</nav>
-					</div>
-
-					<!--=======  End of footer navigation container  =======-->
-					<!--=======  single widget  =======-->
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--=====  End of footer area  ======-->
+      <section class="footer-area pt-50 pb-20">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-sm-6">
+                  <div class="single-footer-widget">
+                     <h2>Get in Touch</h2>
+                     <ul class="footer-contact-info">
+                        <li>
+                           <span>Address:</span>
+                           <a href="#" target="_blank">4848 Hershell Hollow Road Bothell, WA 89076</a>
+                        </li>
+                        <li>
+                           <span>Phone:</span>
+                           <a href="tel:+15143214567">+1 (514) 321-4567</a>
+                        </li>
+                        <li>
+                           <span>Email:</span>
+                           <a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#d4bcb1b8b8bb94b1bebbbafab7bbb9"><span class="__cf_email__" data-cfemail="076f626b6b6847626d68692964686a">[email&#160;protected]</span></a>
+                        </li>
+                     </ul>
+                     <ul class="footer-social">
+                        <li>
+                           <a href="#" target="_blank">
+                           <i class='bx bxl-facebook'></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" target="_blank">
+                           <i class='bx bxl-instagram'></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" target="_blank">
+                           <i class='bx bxl-pinterest-alt'></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" target="_blank">
+                           <i class='bx bxl-twitter'></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="single-footer-widget">
+                     <h2>Policies</h2>
+                     <ul class="quick-links">
+                        <li>
+                           <a href="#">Shipping And Delivery</a>
+                        </li>
+                        <li>
+                           <a href="#">Payment Method</a>
+                        </li>
+                        <li>
+                           <a href="#">How to Shop</a>
+                        </li>
+                        <li>
+                           <a href="#">Terms And Conditions</a>
+                        </li>
+                        <li>
+                           <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                           <a href="#">Returns</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="single-footer-widget">
+                     <h2>Support</h2>
+                     <ul class="quick-links">
+                        <li>
+                           <a href="#">My Account</a>
+                        </li>
+                        <li>
+                           <a href="#">Order Tracking</a>
+                        </li>
+                        <li>
+                           <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                           <a href="#">Customer Services</a>
+                        </li>
+                        <li>
+                           <a href="#">FAQs</a>
+                        </li>
+                        <li>
+                           <a href="#">Help Desk</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="single-footer-widget">
+                     <h2>Join Our Newsletter</h2>
+                     <div class="newsletter-item">
+                        <div class="newsletter-content">
+                           <p>Subscribe to the newsletter for all the latest updates</p>
+                        </div>
+                        <form class="newsletter-form" data-toggle="validator">
+                           <input type="email" class="input-newsletter" placeholder="Email address" name="EMAIL" required autocomplete="off">
+                           <button type="submit">Subscribe</button>
+                           <div id="validator-newsletter" class="form-result"></div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="copyright-area">
+         <div class="container">
+            <div class="copyright-area-content">
+               <p>
+                  Copyright @2020 Ejon. All Rights Reserved by
+                  <a href="https://envytheme.com/" target="_blank">EnvyTheme</a>
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="go-top">
+         <i class='bx bx-up-arrow-alt'></i>
+      </div>

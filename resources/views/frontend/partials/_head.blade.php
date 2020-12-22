@@ -1,34 +1,27 @@
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Lezada - Multipurpose eCommerce Bootstrap4 Template</title>
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Favicon -->
-<link rel="icon" href="assets/images/favicon.ico">
-
-<!-- CSS
-============================================ -->
-<!-- Bootstrap CSS -->
-<link href="{{asset('frontend/assets/css/bootstrap.min.css')}}" rel="stylesheet">
-
-<!-- FontAwesome CSS -->
-<link href="{{asset('frontend/assets/css/font-awesome.min.css')}}" rel="stylesheet">
-
-<!-- Ionicons CSS -->
-<link href="{{asset('frontend/assets/css/ionicons.min.css')}}" rel="stylesheet">
-
-<!-- Themify CSS -->
-<link href="{{asset('frontend/assets/css/themify-icons.css')}}" rel="stylesheet">
-
-<!-- Plugins CSS -->
-<link href="{{asset('frontend/assets/css/plugins.css')}}" rel="stylesheet">
-
-<!-- Helper CSS -->
-<link href="{{asset('frontend/assets/css/helper.css')}}" rel="stylesheet">
-
-<!-- Main CSS -->
-<link href="{{asset('frontend/assets/css/main.css')}}" rel="stylesheet">
-
-<link href="{{asset('frontend/assets/css/custom.css')}}" rel="stylesheet">
-<!-- Modernizer JS -->
-<script src="{{asset('frontend/assets/js/vendor/modernizr-2.8.3.min.js')}}"></script>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="{{asset('frontend/assets/css/bootstrap.min.css')}}">
+      <link rel="stylesheet" href="{{asset('frontend/assets/css/animate.min.css')}}">
+      <link rel="stylesheet" href="{{asset('frontend/assets/css/meanmenu.css')}}">
+      <link rel="stylesheet" href="{{asset('frontend/assets/css/boxicons.min.css')}}">
+      <link rel="stylesheet" href="{{asset('frontend/assets/css/flaticon.css')}}">
+      <link rel="stylesheet" href="{{asset('frontend/assets/css/owl.carousel.min.css')}}">
+      <link rel="stylesheet" href="{{asset('frontend/assets/css/owl.theme.default.min.css')}}">
+      <link rel="stylesheet" href="{{asset('frontend/assets/css/magnific-popup.min.css')}}">
+      <link rel="stylesheet" href="{{asset('frontend/assets/css/nice-select.min.css')}}">
+      <link rel="stylesheet" href="{{asset('frontend/assets/css/slick.min.css')}}">
+      <link rel="stylesheet" href="{{asset('frontend/assets/css/odometer.min.css')}}">
+      <link rel="stylesheet" href="{{asset('frontend/assets/css/style.css')}}">
+      <link rel="stylesheet" href="{{asset('frontend/assets/css/responsive.css')}}">
+      <link rel="stylesheet" href="{{asset('frontend/assets/css/custom.css')}}">
+      <title>@yield('title')</title>
+      <link rel="icon" type="image/png" href="{{asset('frontend/assets/img/favicon.png')}}">
+      <style type="text/css">
+         @media only screen and (max-width: 990px) {
+            .sm-none{
+               display: none !important;
+            }
+         }
+      </style>
+   </head>

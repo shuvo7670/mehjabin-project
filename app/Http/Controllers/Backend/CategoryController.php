@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use Illuminate\Http\Request;
-
+use App\Models\Product;
 class CategoryController extends Controller
 {
     /**
@@ -27,7 +27,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        $categories = Category::all();
+        $categories = Category::where('status',1)->get();
         return view('backend.pages.category.list',compact('categories'));
     }
 
@@ -109,6 +109,12 @@ class CategoryController extends Controller
      */
     public function destroy(Request $request)
     {
+        $changeProductCategoryID = Product::where('category_id',$request->category_id)->get();
+        $changeProductCategoryID->category_id = 'uncategorized';
+        foreach($changeProductCategoryID as $result){
+            $result->category_id = 1;
+            $result->save();
+        }
         $category = Category::findOrFail($request->category_id);
         $category->delete();
         return back()->with('message','Successfully Category Deleted!!!');
