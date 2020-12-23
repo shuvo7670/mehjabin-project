@@ -1,7 +1,7 @@
       <section class="footer-area pt-50 pb-20">
-         <div class="container">
+         <div class="container text-center">
             <div class="row">
-               <div class="col-lg-4 col-sm-6">
+               <div class="col-lg-4 col-sm-12">
                   <div class="single-footer-widget">
                      Logo
                      <ul class="footer-contact-info">
@@ -20,7 +20,7 @@
                      </ul>
                   </div>
                </div>
-               <div class="col-lg-4 col-sm-6">
+               <div class="col-lg-4 col-sm-12">
                   <div class="single-footer-widget">
                      <h2>Quick Link</h2>
                      <ul class="quick-links">
@@ -39,7 +39,7 @@
                      </ul>
                   </div>
                </div>
-               <div class="col-lg-4 col-sm-6">
+               <div class="col-lg-4 col-sm-12">
                   <div class="single-footer-widget">
                      <h2>Social Link</h2>
                      <ul class="footer-social">

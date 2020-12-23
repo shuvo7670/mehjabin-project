@@ -24,15 +24,23 @@ Route::get('/', function () {
     return view('frontend.index',compact('sliders','categories','products','settings'));
 });
 
-Route::get('content',function(){
-    return Cart::content();
-});
-
-Route::get('add/cart/{id}','CartController@single_product_cart');
-
+// Auth Route Start
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
 })->name('dashboard');
+// Auth Route End
+
+// Cart Route Strart
+Route::get('add/cart/{id}','CartController@addToCart');
+Route::get('update/cart/{id}','CartController@updateCart');
+Route::get('remove/cart/{id}','CartController@removeCart');
+// Cart Route End
+
+// Payment Route Start 
+Route::POST('confirm/order','CheckoutController@confirmOrder')->name('order.confirm');
+
+// Payment Route End
+
 
 // Frontend Route Statrt
     Route::get('product/{slug}','FrontendController@showProductDetails');
@@ -57,6 +65,14 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
         Route::get('cart',[
             'uses' => 'CartController@showCartPage',
             'as' => 'cart'
+        ]);        
+        Route::get('cart/update',[
+            'uses' => 'CartController@cartUpdate',
+            'as' => 'cartUpdate'
+        ]);        
+        Route::get('checkout',[
+            'uses' => 'CheckoutController@showCheckoutPage',
+            'as' => 'checkout'
         ]);
    });
     // End Show Essential Page

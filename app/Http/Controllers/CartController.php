@@ -7,7 +7,7 @@ use DB;
 use Cart;
 class CartController extends Controller
 {
-    public function single_product_cart(Request $request,$id){
+    public function addToCart(Request $request,$id){
 
 	   	$single_product=DB::table('products')->where('id',$id)->first();
 		 	$data=array();
@@ -22,6 +22,23 @@ class CartController extends Controller
 	 // Show Cart Page
 	 public function showCartPage()
 	 {
-	 	return view('frontend.pages.cart');
+	 	$carts = Cart::content();
+	 	$cartSubTotal = Cart::subtotal();
+	 	return view('frontend.pages.cart',compact('carts','cartSubTotal'));
+	 }
+
+	 public function updateCart(Request $request,$rowId)
+	 {
+		Cart::update($rowId,$request->qty);
+	 }
+	 public function cartUpdate()
+	 {
+	 	$carts = Cart::content();
+	 	$cartSubTotal = Cart::subtotal();
+	 	return view('frontend.pages.cart-data',compact('carts','cartSubTotal'));
+	 }
+	 public function removeCart(Request $Request,$rowId)
+	 {
+	 	Cart::remove($rowId);
 	 }
 }

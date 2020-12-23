@@ -163,32 +163,37 @@
                      	<li class="nav-item">
                            <a href="/" class="nav-link">Home</a>
                         </li>
-                        <li class="nav-item">
-                           <a href="#" class="nav-link">
-                           Category
-                           <i class='bx bx-chevron-down'></i>
-                           </a>
-                           <ul class="dropdown-menu">
-                              <li class="nav-item">
-                                 <a href="blog.html" class="nav-link">Category</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a href="blog-list-view.html" class="nav-link">Blog List View</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a href="blog-left-sidebar.html" class="nav-link">Blog Left Sidebar</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a href="blog-right-sidebar.html" class="nav-link">Blog Right Sidebar</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a href="blog-full-width.html" class="nav-link">Blog Full Width</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a href="blog-details.html" class="nav-link">Blog Details</a>
-                              </li>
-                           </ul>
-                        </li>
+                        <div class="mobile-nav">
+                           <li class="nav-item">
+                              <a href="{{route('pages.cart')}}" class="nav-link">Cart</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="#" class="nav-link">
+                              Category
+                              <i class='bx bx-chevron-down'></i>
+                              </a>
+                              <ul class="dropdown-menu">
+                                 <li class="nav-item">
+                                    <a href="blog.html" class="nav-link">Category</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="blog-list-view.html" class="nav-link">Blog List View</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="blog-left-sidebar.html" class="nav-link">Blog Left Sidebar</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="blog-right-sidebar.html" class="nav-link">Blog Right Sidebar</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="blog-full-width.html" class="nav-link">Blog Full Width</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="blog-details.html" class="nav-link">Blog Details</a>
+                                 </li>
+                              </ul>
+                           </li>
+                        </div>                  
                         <li class="nav-item">
                            <a href="{{route('pages.about-us')}}" class="nav-link">About Us</a>
                         </li>                        

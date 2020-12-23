@@ -1,3 +1,12 @@
+.d-block {
+	display: block !important;
+}
+#cartData .nice-select {
+	display: none !important;
+}
+.default-btn {
+	background-color: #2ecc71 !important;
+}
 .product-list .price {
 	font-size: 18px !important;
 	
